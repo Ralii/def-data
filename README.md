@@ -4,9 +4,8 @@ Describe data with malli and get accessor def's generated automatically.
 
 ## Installation
 
-Download from http://example.com/FIXME.
+TODO Clojars publish
 
-## Usage
 
 ## Examples
 
@@ -27,6 +26,9 @@ Download from http://example.com/FIXME.
   (def name->name [:base-key :name])
 
 ```
+
+### Advantage
+Accessors will always match the schema structure. If schema changes def's wont exist and with lsp support editor will complain all the locations where previous def's were used.
   
 ### Limitations
 Does not support predicate macros in schema. For example `string?`.
