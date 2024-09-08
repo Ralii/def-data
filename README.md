@@ -10,7 +10,7 @@ Download from http://example.com/FIXME.
 
 ## Examples
 
-`(def-db name base-key
+`(def-data name base-key
    [:map
      [:id :int]
      [:name :string]])`
