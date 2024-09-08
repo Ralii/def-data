@@ -15,7 +15,7 @@ Download from http://example.com/FIXME.
      [:id :int]
      [:name :string]])`
      
- `(def name->id [:base-key :id])
+ `(def name->id [:base-key :id]) \n
   (def name->name [:base-key :name])`
   
 ### Limitations
