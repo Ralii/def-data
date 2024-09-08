@@ -1,6 +1,6 @@
 # def-data
 
-FIXME: description
+Describe data with malli and get accessor def's generated automatically.
 
 ## Installation
 
@@ -8,29 +8,23 @@ Download from http://example.com/FIXME.
 
 ## Usage
 
-FIXME: explanation
-
-    $ java -jar def-data-0.1.0-standalone.jar [args]
-
-## Options
-
-FIXME: listing of options this app accepts.
-
 ## Examples
 
-...
+`(def-db name base-key
+   [:map
+     [:id :int]
+     [:name :string]])`
+     
+ `(def name->id [:base-key :id])
+  (def name->name [:base-key :name])`
+  
+### Limitations
+Does not support predicate macros in schema. For example `string?`.
 
-### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
 
 ## License
 
-Copyright © 2024 FIXME
+Copyright © 2024 Lari Saukkonen
 
 This program and the accompanying materials are made available under the
 terms of the Eclipse Public License 2.0 which is available at
