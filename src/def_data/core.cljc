@@ -69,7 +69,7 @@
                  (mapcat #(take (count %) (iterate butlast %)))
                  (map #(vec %)))))
 
-(defmacro def-db [fn-name base-key schema]
+(defmacro def-data [fn-name base-key schema]
   (let [forms (resolve-symbols &env schema)
         function-accessors (->>
                             forms
