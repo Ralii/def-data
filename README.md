@@ -2,6 +2,8 @@
 
 Describe data with malli and get accessor def's generated automatically.
 
+NOTE: Only works for Clojurescript currently. I intend to use this for re-frame db and iterate from there. Still early phases and subject to change.
+
 ## Installation
 
 TODO Clojars publish
